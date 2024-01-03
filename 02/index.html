@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Drathing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraThing</title>
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-    #subject{
-      text-align: center;
-      font-family: 'Finger Paint', 바탕;
-      font-size: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
-    }
-    #drawingCanvas{
-      border: 1px solid rgb(90, 155, 46);
-      display: block;
-      margin: auto;
-    }
-    #button-container {
+        body {
+            text-align: center;
+            margin: 20px;
+        }
+        #img {
+        	 padding-top: 50px;
+        	 padding-bottom: 40px;
+           font-family: 'Finger Paint', 바탕;
+           text-align: center;
+            font-size: 60px;
+            height: auto;
+        }
+        .pink-text {
+            color: pink;
+        }
+
+        .green-text {
+            color: rgb(146, 231, 146);
+        }
+         .button-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-    .button {
+        .button {
             padding: 10px 20px;
             font-family: 'Finger Paint', 바탕;
             font-size: 20px;
@@ -33,21 +43,18 @@
             border-radius: 10px;
             box-shadow: none;
         }
+    </style>
 
-</style>
 <body>
-    <div id="subject">
-      <h1 style="color: rgb(245, 109, 193);">subject: <span style="font-family:'Finger Paint', 바탕 ; color:rgb(0, 0, 0)">subject</span></h1>
-    </div>
 
-    <div>
-    <canvas id="drawingCanvas" width="800" height="600"></canvas>
-    <script type="text/javascript" src="<c:url value="/resources/js/drawing.js" />"></script>
+    <!-- 로고 이미지 -->
+    <div id="img">
+      <h1 ><span class="pink-text">Key</span>
+        <span class="green-text">Ward</span></h1>
     </div>
-
-    <div id="button-container">
-      <!-- 버튼 1 -->
-    <form action="" method="post">
+ <div class="button-container">
+    <!-- 버튼 1 -->
+    <form action="">
         <button type="submit" class="button">RAMDOM</button>
     </form>
 
@@ -55,6 +62,6 @@
     <form action="button2Action.jsp" method="post">
         <button type="submit" class="button">SELECT</button>
     </form>
-      </div>
+</div>
 </body>
 </html>
